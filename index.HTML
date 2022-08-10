@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Background changer</title>
+        <style>
+            body{
+                margin: 0px;
+                padding: 20px 100px;
+                background-color: lightsalmon;
+            }
+            h1{
+                text-align: center;
+                text-decoration: underline;
+                background-color: cornsilk;
+                padding: 10px 10px;
+            }
+            img{
+                margin: 0 auto;
+            }
+            p{
+                font-size: 20px;
+                text-align: center;
+                background-color: honeydew;
+                padding: 2%;
+            }
+            .btn{
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                border: solid black 1px ;
+                border-radius: 100%;
+                cursor: pointer;  
+            }
+            #white{
+                background-color: white;
+            }
+            #blue{
+                background-color: aqua;
+            }
+            #green{
+                background-color: chartreuse;
+            }
+            #yellow{
+                background-color: yellow;
+            }
+            #red{
+                background-color: firebrick;
+            }
+            #switch{
+                text-align: right;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="switch">
+            <span class="btn" id="white" onclick="func_col('#FFFFFF')"></span>
+            <span class="btn" id="red" onclick="func_col('#800000')"></span>
+            <span class="btn" id="blue" onclick="func_col('#7FFFD4')"></span>
+            <span class="btn" id="green" onclick="func_col('#00FF00')"></span>
+            <span class="btn" id="yellow" onclick="func_col('#FFFF00')"></span>
+        </div>
+
+        <h1>About Us</h1>
+        <img src="SAM_5097.jpg" height="auto" width="100%">
+        <p> 
+            Overview : Dzongri is a rather less traveled route located in the West Sikkim. 
+            It is one of the best treks if you want to experience the brilliance of 
+            solitary ever snowcapped peaks and it offers a great opportunity to an 
+            excellent cultural experience and a splendid view of the Kanchenjunga .
+
+            Itinerary :-
+            Day 1 : NJP - Yuksom drive
+            Day 2 : Yuksom ( 1740 m)- Sachen( 2200 m)- Bakhim (2700 m)-Tshoka ( 3400 m)
+            Day 3 : Tsokha ( 3400 m )-Phedang ( 3682 m) - Dzongri Base Camp ( 3969 m)
+            Day 4 : Dzongri Top (4200 m) +descent to Tsokha
+            Day 5 : descent to Yuksom
+            Day 6 : Yuksom - NJP drive
+            
+            #trekking #trekkersofindia #jumhc1966 #jumhc_days #trekkingday
+        </p>
+
+        <script>
+            function func_col(color){
+                document.body.style.backgroundColor = color;
+            }
+        </script>
+    </body>
+</html>
